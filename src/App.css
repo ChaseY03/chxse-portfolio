@@ -1,3 +1,88 @@
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+body{
+  background-color: #2C2C2C;
+  font-family: "Roboto", sans-serif;
+}
+h1{
+  color: white;
+}
+
+/* Container for the whole Projects section */
+.projects {
+  position: relative;
+  justify-content: center;
+  overflow-y: auto; /* Allows vertical scrolling */
+  min-height: 100vh; /* Ensures the container takes up the full screen height */
+  padding-bottom: 20px; /* Optional: Adds a little extra space at the bottom */
+}
+
+/* Style for the individual project card (if needed) */
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  text-align: center;
+  align-items: center;
+}
+
+
+/* Individual project card styling */
+.project-card {
+  background-color: #2c2c2e;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+} */
+
+/* Stars floating on the background */
+.stars .star {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.stars .star:hover {
+  transform: scale(1.2);
+  color: #FFD700; 
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #555;
+  color: #ccc;
+  cursor: not-allowed;
+  border: 1px solid #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }

@@ -1,3 +1,4 @@
+import '../App.css';
 import {Container} from '@mui/material';
 
 export default function About() {
