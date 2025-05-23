@@ -22,9 +22,17 @@ const Navbar = () => {
   return (
     <AppBar position="sticky" sx={{ backgroundColor: '#EE2E31'}}>
       <Toolbar>
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          Chxse
-        </Typography>
+       <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
+  <Typography
+    variant="h6"
+    sx={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}
+    component={Link}
+    to="/"
+  >
+    Chxse
+  </Typography>
+</Box>
+
         {/* If the screen is small, show the hamburger menu */}
         {isSmallScreen ? (
           <div>

@@ -7,7 +7,7 @@ export default function Home() {
     <Container maxWidth="xl">
         <h1>Hi, I'm Chase</h1>
         <Typography>
-            [Page coming soon, for now check out the other pages :)]
+            Page coming soon, for now check out the other pages :)
         </Typography>
     </Container>
     )

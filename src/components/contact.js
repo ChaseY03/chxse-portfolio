@@ -33,7 +33,6 @@ export default function Contact() {
         </IconButton>
       </Stack>
 
-      {/* Contact Form placeholder */}
       <Typography variant="body1">
         [Contact form coming soon]
       </Typography>
