@@ -26,7 +26,7 @@ const exampleProjects = [
     id: 3,
     name: "Apollo - In progress",
     description: "Mental health application for WearOS",
-    status: "in-progress",
+    link: "https://github.com/ChaseY03/apollo-app",
   },
   {
     id: 4,
