@@ -42,7 +42,7 @@ const exampleProjects = [
   },
 ];
 
-export default function Projects() {
+export default function PlanetProjects() {
   const [projects, setProjects] = useState([]);
   const [anchorEl, setAnchorEl] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);

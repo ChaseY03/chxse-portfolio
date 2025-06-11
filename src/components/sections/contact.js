@@ -1,11 +1,12 @@
-import '../App.css';
+import "../../App.css";
+
 import { Container, IconButton, Stack, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Contact() {
   return (
-    <Container maxWidth="xl" style={{ textAlign: 'center', paddingTop: '3rem' }}>
+    <Container maxWidth="xl" sx={{ textAlign: 'center', pt: 3 }}>
       <h1>
         Want to contact me?
       </h1>
@@ -17,7 +18,7 @@ export default function Contact() {
           href="https://github.com/ChaseY03"
           target="_blank"
           rel="noopener noreferrer"
-          sx={{ color: 'black' }}
+          sx={{ color: 'white' }}
         >
           <GitHubIcon fontSize="large" />
         </IconButton>
@@ -27,15 +28,12 @@ export default function Contact() {
           href="https://linkedin.com/in/Chase-Yang"
           target="_blank"
           rel="noopener noreferrer"
-          sx={{ color: 'black' }}
+          sx={{ color: 'white' }}
         >
           <LinkedInIcon fontSize="large" />
         </IconButton>
       </Stack>
 
-      <Typography variant="body1">
-        [Contact form coming soon]
-      </Typography>
     </Container>
   );
 }

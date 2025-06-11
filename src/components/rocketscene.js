@@ -20,8 +20,8 @@ export default function RocketScene() {
       await rocketControls.start({
         x: "100%",
         y: "30%",
-        rotate: [0, 45],
-        transition: { duration: 2, ease: "easeInOut" },
+        rotate: [0,45],
+        transition: { duration: 3, ease: "easeInOut" },
       });
 
       // Moon fades in
@@ -32,30 +32,27 @@ export default function RocketScene() {
 
       // Rocket begins landing
       await rocketControls.start({
-        top: "-30px",
-        left: "calc(100% - 240px)",
+        top: "80px",
+        left: "calc(100% - 380px)",
         rotate: [360, 0],
         transition: { duration: 2 },
       });
 
       // Final descent
       await rocketControls.start({
-        top: "-5px",
+        top: "85px",
         transition: { duration: 1.5 },
       });
 
-      // Subtle flicker or attention pulse
-      await rocketControls.start({ opacity: 0.8 });
       setLanded(true);
       await rocketControls.start({
-        top: "-2px",
+        top: "90px",
         opacity: 1,
         transition: { duration: 0.5 },
       });
     };
-
-    sequence();
-  }, []);
+ sequence();
+}, [rocketControls, moonControls]);
 
   return (
     <>
@@ -68,8 +65,8 @@ export default function RocketScene() {
         animate={moonControls}
         style={{
           position: "absolute",
-          top: "60px",
-          right: "60px",
+          top: "150px",
+          right: "200px",
           width: 120,
           opacity: 0.8,
           zIndex: 0,

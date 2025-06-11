@@ -1,15 +1,15 @@
 
+
 ::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
-body{
-  background-color: #2C2C2C;
-  font-family: "Roboto", sans-serif;
-}
-h1{
-  color: white;
+body {
+  background-color: #0d1117;
+  font-family: Space Grotesk, monospace;
+  /*font-family: "Roboto", sans-serif;*/
+  color: #c9d1d9;
 }
 
 /* Container for the whole Projects section */
@@ -30,7 +30,6 @@ h1{
   text-align: center;
   align-items: center;
 }
-
 
 /* Individual project card styling */
 .project-card {
@@ -60,7 +59,7 @@ h1{
 
 .stars .star:hover {
   transform: scale(1.2);
-  color: #FFD700; 
+  color: #ffd700;
   cursor: pointer;
 }
 
@@ -71,17 +70,15 @@ button:disabled {
   border: 1px solid #444;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* Hide rocket on small/mobile screens */
+.rocket-container {
+  display: block;
+}
+@media (max-width: 950px) {
+  .rocket-container {
+    display: none;
+  }
+}
 
 .App {
   text-align: center;
