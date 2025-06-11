@@ -8,7 +8,7 @@ export default function Footer(){
   maxWidth="xl"
   sx={{
     textAlign: 'center',
-    pt: 2,
+    py: 2,
     borderTop: '1px solid rgba(255,255,255,0.1)',
     mt: 4,
   }}

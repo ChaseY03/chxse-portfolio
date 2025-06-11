@@ -21,6 +21,7 @@
 // }
 
 // export default App;
+import React, { useEffect } from "react";
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './data/theme';
 import Navbar from "./components/navbar";
@@ -32,6 +33,10 @@ import ContactSection from "./components/sections/contact";
 import Footer from './components/sections/footer';
 
 export default function App() {
+    useEffect(() => {
+    window.scrollTo(0, 0);
+    window.history.replaceState(null, null, ' ');
+  }, []);
   return (
        <ThemeProvider theme={theme}>
     <div style={{ position: "relative", minHeight: "100vh" }}>
